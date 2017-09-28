@@ -4,7 +4,7 @@
         <h1>You will not see any cat but... <a style="cursor: pointer" @click="reFetch()">{{this.animal}}s!?</a></h1>
       </header>
 
-      <p style="margin: 50px 0;" v-if="loading">Loading...</p>
+      <p style="margin: 50px 0;" v-if="loading">Buffering {{this.animal}}...</p>
       <main v-else>
         <a :href="gif.image_original_url"><img :src="gif.image_url"/></a>
         <pre><code>Powered by the <a :href="gif.url" target="_blank">Giphy API!</a></code></pre>
