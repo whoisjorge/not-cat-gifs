@@ -12,14 +12,14 @@ There are no Cat GIFs, but look at the [list](/src/animals.js) of animals you ca
 
 ## Built with
 
-- [Vue](vuejs.org) & [Axios](github.com/mzabriskie/axios)
-- [Giphy](developers.giphy.com)
-- [JS.org](JS.org)
+- [Vue](https://vuejs.org) & [Axios](https://github.com/mzabriskie/axios)
+- [Giphy](https://developers.giphy.com)
+- [JS.org](https://JS.org)
 
 
 ## Contributions
 
-:octocat: <Don't [add](/edit/master/src/animals.js) me)
+:octocat: <Don't [add](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js) me)
 
 ``` bash
 # Fork or clone the repository!
@@ -33,7 +33,7 @@ npm install
 npm run dev
 ```
 
-> For detailed explanation on how things work, checkout the [guide](vuejs-templates.github.io/webpack/) and [docs for vue-loader](vuejs.github.io/vue-loader).
+> For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
 <!-- ##
