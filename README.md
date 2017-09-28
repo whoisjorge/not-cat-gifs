@@ -5,7 +5,7 @@
 
 </p>
 
-There are no Cat GIFs, but look at the [list](/src/animals.js) of animals you can probably find!
+<p align="center">There are no Cat GIFs, but look at the [list](/src/animals.js) of animals you can probably find!</p>
 
 ...and even some cat too! :scream_cat:
 

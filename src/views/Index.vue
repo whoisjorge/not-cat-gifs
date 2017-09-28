@@ -7,7 +7,7 @@
       <p style="margin: 50px 0;" v-if="loading">Loading...</p>
       <main v-else>
         <a :href="gif.image_original_url"><img :src="gif.image_url"/></a>
-        <pre><code>Random GIF fetched through the <a :href="gif.url" target="_blank">Giphy API!</a></code></pre>
+        <pre><code>Powered by the <a :href="gif.url" target="_blank">Giphy API!</a></code></pre>
       </main>
 
       <footer>
@@ -19,7 +19,6 @@
       <br>
       <a href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">
       <img src="http://logo.js.org/dark_horz.png" width="50" alt="JS.ORG Logo"/></a>
-      <!-- alternatives [bright|dark]_[horz|vert|tiny].png (width[horz:102,vert:50,tiny:77]) -->
   </section>
 </template>
 
@@ -113,4 +112,9 @@ main
     min-width: 600px
     @media (max-width: 40.0rem)
       min-width: 100%
+
+// aylmao?
+@media (max-width: 24.0rem)
+  footer
+    zoom: .7
 </style>
