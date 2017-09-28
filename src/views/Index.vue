@@ -15,6 +15,11 @@
         <gh-btns-fork slug="whoisjorge/not-cat-gifs" show-count></gh-btns-fork>
         <gh-btns-follow user="whoisjorge" show-count></gh-btns-follow>
       </footer>
+
+      <br>
+      <a href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">
+      <img src="http://logo.js.org/dark_horz.png" width="50" alt="JS.ORG Logo"/></a>
+      <!-- alternatives [bright|dark]_[horz|vert|tiny].png (width[horz:102,vert:50,tiny:77]) -->
   </section>
 </template>
 

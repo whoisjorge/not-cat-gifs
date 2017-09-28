@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // Router View Components
-import Index from '@/components/views/Index'
+import Index from '@/views/Index'
 
 Vue.use(Router)
 
