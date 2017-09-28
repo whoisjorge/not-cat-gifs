@@ -5,9 +5,9 @@
 
 </p>
 
-<p align="center">There are no Cat GIFs, but look at the [list](/src/animals.js) of animals you can probably find!</p>
+<p align="center">There are no Cat GIFs, but look at the <a href="/src/animals.js">list</a> of animals you can probably find!</p>
 
-...and even some cat too! :scream_cat:
+<p>...and even some cat too! :scream_cat:</p>
 
 
 ## Built with
@@ -19,7 +19,7 @@
 
 ## Contributions
 
-:octocat: <Don't [add](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js) me)
+:octocat: < Dude you should [add](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js) me ]
 
 ``` bash
 # Fork or clone the repository!
