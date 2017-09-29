@@ -10,7 +10,7 @@
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
     "deploy": "gh-pages-deploy",
-    "clean": "rimraf build config src LICENSE README.md"
+    "clean": "rimraf build config src LICENSE README.md .babelrc .editorconfig .eslintignore .eslintrc.js .gitignore .poastcss.js package.json"
   },
   "dependencies": {
     "axios": "^0.16.2",
