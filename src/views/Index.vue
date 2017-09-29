@@ -141,6 +141,7 @@ main
     zoom: .7
   h1
     font-size: 20px
+    margin-top: 20px
   pre
     background-color: white
     code

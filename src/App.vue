@@ -2,7 +2,7 @@
   <div id="app">
 
     <github-corner/>
-    <!-- <particlesJS/> -->
+    <particlesJS/>
 
     <router-view/>
 
@@ -14,11 +14,11 @@
 // https://github.com/tholman/github-corners
 import githubCorner from '@/components/githubCorner'
 // https://github.com/creotip/vue-particles
-// import particlesJS from '@/components/particlesJS'
+import particlesJS from '@/components/particlesJS'
 
 export default {
   name: 'app',
-  components: { githubCorner }
+  components: { githubCorner, particlesJS }
 }
 </script>
 
