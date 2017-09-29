@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <vue-particles color="#42b883" :particleOpacity="0.9" :particlesNumber="40" shapeType="star" :particleSize="1"
+                   linesColor="#42b883" :linesWidth="1" :lineLinked="true" :lineOpacity="0.4" :linesDistance="120"
+                   :moveSpeed="3" :hoverEffect="true" hoverMode="grab" :clickEffect="false"/>
+
     <router-view></router-view>
   </div>
 </template>
@@ -7,10 +11,17 @@
 
 <script>
 import Vue from 'vue'
+//
+// https://github.com/gluons/vue-github-buttons
 import VueGitHubButtons from 'vue-github-buttons'
 import 'vue-github-buttons/dist/vue-github-buttons.css'
 Vue.use(VueGitHubButtons, { useCache: true })
-
+//
+// https://github.com/creotip/vue-particles
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
+//
+//
 export default {
   name: 'app'
 }
@@ -18,8 +29,7 @@ export default {
 
 
 <style lang="scss">
-/* Milligram v1.3.0 (https://milligram.github.io)
- * Copyright (c) 2017 CJ Patoilo | MIT license */
+/* https://github.com/milligram/milligram */
 @import "~milligram/dist/milligram.css";
 
 
@@ -32,5 +42,10 @@ export default {
   align-items: center;
   min-height: 100vh;
   text-align: center;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
 }
 </style>
