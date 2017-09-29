@@ -7,7 +7,7 @@
       <main v-else>
         <a :href="gif.image_original_url"><img :src="gif.image_url"/></a>
         <a :href="gif.url" target="_blank"><img class="giphy" src="../assets/poweredby-giphy.gif"/></a>
-        <a :href="gif.url" download><pre><code>Download this GIF!</code></pre></a>
+        <a :href="gif.image_url" download><pre><code>Download this GIF!</code></pre></a>
       </main>
 
       <socialShareing/>
