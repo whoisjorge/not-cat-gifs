@@ -138,8 +138,13 @@ main
 @media (max-width: 30.0rem)
   footer
     display: block
+    zoom: .7
   h1
-    font-size: 2.4vmax
+    font-size: 20px
+  pre
+    background-color: white
+    code
+    padding: 2px
 
 
 
