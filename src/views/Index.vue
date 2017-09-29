@@ -1,22 +1,19 @@
 <template>
-<section>
-    <h1>You will not see any cat but... <a @click="reFetch()">{{this.animal}}s!?</a></h1>
+  <section>
+      <h1>You will not see any cat but... <a @click="reFetch()">{{this.animal}}s!?</a></h1>
 
-    <p style="min-height: 220px; margin-top: 180px" v-if="loading">Buffering {{this.animal}}...</p>
+      <p style="min-height: 220px; margin-top: 180px" v-if="loading">Buffering {{this.animal}}...</p>
 
-    <main v-else>
-      <a :href="gif.image_original_url"><img :src="gif.image_url"/></a>
-      <pre><code>View on <a :href="gif.url" target="_blank">Giphy!</a></code></pre>
-    </main>
+      <main v-else>
+        <a :href="gif.image_original_url"><img :src="gif.image_url"/></a>
+        <pre><code><a :href="gif.url" target="_blank">View it on Giphy!</a></code></pre>
+      </main>
 
-    <footer>
-      <gh-btns-star slug="whoisjorge/not-cat-gifs" show-count></gh-btns-star>
-      <gh-btns-fork slug="whoisjorge/not-cat-gifs" show-count></gh-btns-fork>
-      <gh-btns-follow user="whoisjorge" show-count></gh-btns-follow>
-       <!-- JS.org -->
-      <div><a href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community"><img src="https://logo.js.org/dark_horz.png" width="50" alt="JS.ORG Logo"/></a></div>
-    </footer>
-</section>
+      <socialShareing/>
+      <!-- JS.org -->
+      <a class="JSorg" href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community"><img src="https://logo.js.org/dark_horz.png" width="50" alt="JS.ORG Logo"/></a>
+
+  </section>
 </template>
 
 
@@ -25,7 +22,12 @@
 import axios from 'axios'
 import animals from '@/animals.js'
 
+// https://github.com/nicolasbeauvais/vue-social-sharing
+import socialShareing from '@/components/socialShareing'
+
 export default {
+
+  components: { socialShareing },
 
   data: () => ({
     loading: true,
@@ -53,7 +55,7 @@ export default {
           api_key: process.env.API_KEY,
           // api_key: 'Your API key',
           rating: 'g',
-          // Random animal query from Array
+          // Random animal query
           tag: 'animal-' + this.animal
         }
       })
@@ -87,11 +89,16 @@ a
 pre
   max-width: 600px
   margin: 0 auto 20px auto
-  border-left: none
   animation-duration: 1.2s
   animation-fill-mode: both
   animation-name: fadeInUp
-
+  border-color: transparent
+  code
+    background-image: linear-gradient(152deg,#42b883,#feab3a)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    -webkit-animation: hue 6s infinite linear
+    animation-fill-mode: both
 
 section
   margin: 0 auto
@@ -113,7 +120,6 @@ h1
     animation-fill-mode: both
     cursor: pointer
 
-
 main
   max-width: 600px
   margin: 25px auto 0 auto
@@ -124,24 +130,23 @@ main
       min-width: 100%
 
 
-footer
-  display: flex
-  justify-content: center
-  margin: 0
-  div
-    margin: 0 10px
-    a
-      margin-top: -2px
-
-
 
 
 
 
 // aylmao?
 @media (max-width: 30.0rem)
-  footer, h1
-    zoom: .7
+  footer
+    display: block
+  h1
+    font-size: 2.4vmax
+
+
+
+.JSorg
+  position: absolute
+  top: 14px
+  left: 7px
 
 
 /* -----------------------------------~~/\
