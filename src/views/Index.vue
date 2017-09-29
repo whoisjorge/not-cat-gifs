@@ -6,23 +6,18 @@
 
       <main v-else>
         <a :href="gif.image_original_url"><img :src="gif.image_url"/></a>
-        <pre><code><a :href="gif.url" target="_blank">View it on Giphy!</a></code></pre>
+        <a :href="gif.url" target="_blank"><img class="giphy" src="../assets/poweredby-giphy.gif"/></a>
+        <a :href="gif.url" download><pre><code>Download this GIF!</code></pre></a>
       </main>
 
       <socialShareing/>
-      <!-- JS.org -->
-      <a class="JSorg" href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community"><img src="https://logo.js.org/dark_horz.png" width="50" alt="JS.ORG Logo"/></a>
-
   </section>
 </template>
-
 
 
 <script>
 import axios from 'axios'
 import animals from '@/animals.js'
-
-// https://github.com/nicolasbeauvais/vue-social-sharing
 import socialShareing from '@/components/socialShareing'
 
 export default {
@@ -80,6 +75,9 @@ export default {
 
 
 
+
+
+
 <style lang="sass">
 
 a
@@ -121,39 +119,34 @@ h1
     cursor: pointer
 
 main
+  position: relative
   max-width: 600px
   margin: 25px auto 0 auto
   img
+    cursor: default
     max-height: 400px
     min-width: 600px
     @media (max-width: 40.0rem)
       min-width: 100%
 
 
-
-
-
-
-// aylmao?
-@media (max-width: 30.0rem)
-  footer
-    display: block
-    zoom: .7
-  h1
-    font-size: 20px
-    margin-top: 50px
-  pre
-    background-color: white
-    code
-    padding: 2px
-
-
-
-.JSorg
+.giphy
   position: absolute
-  top: 14px
-  left: 7px
+  bottom: 4.5rem
+  left: 0
+  max-height: 53px
+  min-width: 30px
+  z-index: 999
+  cursor: help
+  animation: poweredByGiphy 2.666s ease-in
 
+@keyframes poweredByGiphy
+  from
+    opacity: 0
+  60%
+    opacity: 0
+  to
+    opacity: 1
 
 /* -----------------------------------~~/\
    ~ ANIMATIONS                          |
@@ -179,4 +172,29 @@ main
     transform: scale3d(1.05, 1.05, 1.05)
   to
     transform: scale3d(1, 1, 1)
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style lang="sass">
+// aylmao?
+@media (max-width: 30.0rem)
+  footer
+    display: block
+    zoom: .7
+  h1
+    font-size: 21px
+    margin-top: 66.6px
+  pre code
+    padding: 2px
 </style>

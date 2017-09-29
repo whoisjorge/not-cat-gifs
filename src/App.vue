@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-
     <github-corner/>
-    <particlesJS/>
+      <particlesJS/>
 
-    <router-view/>
+
+    <router-view></router-view>
+
+
+    <!-- Thank you JS.org -->
+    <a style="position: absolute;top: 12px;left: 7px;" href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">
+      <img src="https://logo.js.org/dark_horz.png" width="50" alt="JS.ORG Logo"/>
+    </a>
 
   </div>
 </template>
 
 
 <script>
-// https://github.com/tholman/github-corners
 import githubCorner from '@/components/githubCorner'
-// https://github.com/creotip/vue-particles
 import particlesJS from '@/components/particlesJS'
 
 export default {
@@ -21,6 +25,9 @@ export default {
   components: { githubCorner, particlesJS }
 }
 </script>
+
+
+
 
 
 <style lang="scss">

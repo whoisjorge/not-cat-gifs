@@ -1,6 +1,7 @@
+<!-- https://github.com/nicolasbeauvais/vue-social-sharing -->
 <template>
   <social-sharing url="https://cats.js.org"
-                  title="Not Cat GIFs"
+                  title="There are no Cat GIFs..."
                   description="There are no Cat GIFs..."
                   quote=""
 
@@ -39,7 +40,6 @@ export default {
 $fb: #3b5998
 $tw: #1dcaff
 
-
 button
   margin: 0 10px
   transition: background-color .2s, color .2s
@@ -61,7 +61,7 @@ button
       &:before
         background-color: #fff
     &:before
-      mask-image: url(/static/facebook.svg)
+      mask-image: url('../assets/facebook.svg')
       background-color: $fb
 
   // Share on twitter
@@ -75,6 +75,6 @@ button
       &:before
         background-color: #fff
     &:before
-      mask-image: url(/static/twitter.svg)
+      mask-image: url(../assets/twitter.svg)
       background-color: $tw
 </style>

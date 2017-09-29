@@ -41,7 +41,7 @@ npm run dev
   <img src="media.gif" width="512" height"512" alt="not-cat-gifs">
 </p> -->
 
-## License
+## Open Source
 
 [MIT](LICENSE)
 

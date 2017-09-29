@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import App from './App'
-
 import router from './router'
 
-// Vue config.
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -13,3 +11,7 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+/* eslint-disable no-console, no-useless-escape */
+console.log('cats.js.org | There Are No Cat GIFs')
+console.log('------------------------------------')
