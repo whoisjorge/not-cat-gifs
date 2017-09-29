@@ -7,7 +7,7 @@
 
 <p align="center">There are no Cat GIFs, but look at the <a href="/src/animals.js">list</a> of animals you can probably find!</p>
 
-<p>...and even some cat too! :scream_cat:</p>
+<p align="center">...and even some cat too! :scream_cat:</p>
 
 
 ## Built with
