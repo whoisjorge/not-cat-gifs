@@ -1,18 +1,19 @@
 <template>
   <section>
-      <h1>You will not see any cat but... <a @click="reFetch()">{{this.animal}}s!?</a></h1>
+      <h1>There are no cats but... <a @click="reFetch()">{{this.animal}}s!?</a></h1>
 
       <p style="min-height: 220px; margin-top: 180px" v-if="loading">Buffering {{this.animal}}...</p>
 
       <main v-else>
-        <a :href="gif.image_original_url"><img :src="gif.image_url"/></a>
-        <a :href="gif.url" target="_blank"><img class="giphy" src="../assets/poweredby-giphy.gif"/></a>
+        <a @click="reFetch()"><img :src="gif.image_url"/></a>
+        <a :href="gif.url" target="_blank"><img class="giphy" src="../assets/poweredbyGiphy.gif"/></a>
         <a :href="gif.image_url" download><pre><code>Download this GIF!</code></pre></a>
       </main>
 
       <socialShareing/>
   </section>
 </template>
+
 
 
 <script>
@@ -32,7 +33,7 @@ export default {
     animals: animals
   }),
 
-  created () {
+  beforeMount () {
     this.randomAnimal()
     this.fetchData()
   },
@@ -72,9 +73,6 @@ export default {
   }
 }
 </script>
-
-
-
 
 
 
@@ -143,7 +141,7 @@ main
 @keyframes poweredByGiphy
   from
     opacity: 0
-  60%
+  80%
     opacity: 0
   to
     opacity: 1

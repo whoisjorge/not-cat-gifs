@@ -14,12 +14,13 @@
 - [Axios](https://github.com/mzabriskie/axios)
 - [Giphy](https://developers.giphy.com)
 
-And special appreciation and thanks to the [JS.org](https://JS.org) community.
+And special appreciation to the [JS.org](https://JS.org) community.
 
 
-## Contributions
+## Contributing
 
-:octocat: < please [add](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js) me! )
+⚡️ If you want to add/rename/remove an animal from the search query, they're all located in [animals.js](src/animals.js)... :octocat: [PRs are very welcome!](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js)
+
 
 ``` bash
 # Fork or clone the repository!
@@ -41,7 +42,7 @@ npm run dev
   <img src="media.gif" width="512" height"512" alt="not-cat-gifs">
 </p> -->
 
-## Open Source
+## License
 
 [MIT](LICENSE)
 
@@ -49,5 +50,5 @@ npm run dev
 <br><br>
 <p align="center">🙀</p>
 <p align="center">
-  <sub><sup>Another rash code by <a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
+  <sub><sup>Another grubby code by <a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
 </p>

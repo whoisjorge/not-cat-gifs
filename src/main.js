@@ -1,17 +1,18 @@
+import 'es6-promise/auto'
+
 import Vue from 'vue'
-import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
+import App from './App'
 
+Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
-  template: '<App/>',
-  components: { App }
+  ...App
 })
+.$mount('#app')
 
 /* eslint-disable no-console, no-useless-escape */
-console.log('cats.js.org | There Are No Cat GIFs')
-console.log('------------------------------------')
+console.log('|          CATS.JS.ORG             |')
+console.log('|----------------------------------|')
