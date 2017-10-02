@@ -9,6 +9,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
+var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
+
 var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
@@ -62,8 +64,10 @@ var webpackConfig = merge(baseWebpackConfig, {
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-      chunksSortMode: 'dependency'
+      chunksSortMode: 'dependency',
+      inlineSource: '.(js|css)$' // embed all javascript and css inline
     }),
+    new HtmlWebpackInlineSourcePlugin(),
     // https://www.npmjs.com/package/cname-webpack-plugin
     // new CnameWebpackPlugin({
     //   domain: 'cats.js.org',
