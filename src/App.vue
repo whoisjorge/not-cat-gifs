@@ -1,11 +1,9 @@
 <template>
   <div id="app">
     <github-corner/>
-      <particlesJS/>
-
+    <particlesJS/>
 
     <router-view></router-view>
-
 
     <!-- Thank you JS.org -->
     <a style="position: absolute;top: 12px;left: 7px;" href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">
@@ -14,7 +12,6 @@
 
   </div>
 </template>
-
 
 
 <script>
@@ -26,7 +23,6 @@ export default {
   components: { githubCorner, particlesJS }
 }
 </script>
-
 
 
 <style lang="scss">

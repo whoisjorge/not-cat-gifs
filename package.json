@@ -9,6 +9,7 @@
     "start": "npm run dev",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
+    "watch": "cd dist && lite-server",
     "lint": "eslint --ext .js,.vue src",
     "deploy": "gh-pages-deploy",
     ":clean": "rimraf build config src LICENSE README.md .babelrc .editorconfig .eslintignore .eslintrc.js .postcssrc.js package.json package-lock.json"

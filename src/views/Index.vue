@@ -17,7 +17,7 @@
           <a :href="gif.image_url" download><pre><code>Download this GIF!</code></pre></a>
       </main>
 
-      <socialShareing/>
+      <social-sharing/>
 
   </section>
 </template>
@@ -28,12 +28,12 @@
 import axios from 'axios'
 import animals from '@/animals.js'
 
-import socialShareing from '@/components/socialShareing'
+import socialSharing from '@/components/socialSharing'
 import Spinner from 'vue-simple-spinner'
 
 export default {
 
-  components: { socialShareing, Spinner },
+  components: { socialSharing, Spinner },
 
   data: () => ({
     loading: true,
@@ -86,7 +86,7 @@ export default {
 
 
 
-<style lang="sass">
+<style lang="sass" scoped>
 
 pre
   max-width: 600px
@@ -200,11 +200,6 @@ main
 //
 // This section is even more crazy
 @media (max-width: 30.0rem)
-  footer
-    display: block
-    button
-      width: 280px
-      margin-bottom: 10px!important
   h1
     font-size: 21px
     padding-top: 80px

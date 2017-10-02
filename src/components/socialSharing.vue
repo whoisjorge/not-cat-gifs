@@ -26,7 +26,7 @@ import SocialSharing from 'vue-social-sharing'
 Vue.use(SocialSharing)
 
 export default {
-  name: 'socialShareing',
+  name: 'social-sharing',
   data: () => ({
     //
   })
@@ -34,13 +34,13 @@ export default {
 </script>
 
 
-<style lang="sass">
+<style lang="sass" scoped>
 
 // Brand colors
 $fb: #3b5998
 $tw: #1dcaff
 
-.button
+button
   margin: 0 10px
   background-color: transparent
   transition: background-color .3s, color .4s
@@ -80,4 +80,12 @@ $tw: #1dcaff
     &:before
       mask-image: url(../assets/twitter.svg)
       background-color: $tw
+
+
+@media (max-width: 30.0rem)
+  footer
+    display: block
+    button
+      width: 280px
+      margin-bottom: 10px!important
 </style>
