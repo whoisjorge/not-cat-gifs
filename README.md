@@ -50,5 +50,5 @@ npm run dev
 <br><br>
 <p align="center">🙀</p>
 <p align="center">
-  <sub><sup>Another grubby code by <a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
+  <sub><sup>Another frowzy code by <a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
 </p>
