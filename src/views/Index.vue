@@ -2,15 +2,23 @@
   <section>
       <h1>There are no cats but... <a @click="reFetch()">{{this.animal}}s!?</a></h1>
 
-      <p style="min-height: 220px; margin-top: 180px" v-if="loading">Buffering {{this.animal}}...</p>
+      <div class="loading" v-if="loading">
+        <spinner size="tiny" :message="'Loading ' + this.animal + ' GIF...'"/>
+      </div>
 
       <main v-else>
-        <a @click="reFetch()"><img :src="gif.image_url"/></a>
-        <a :href="gif.url" target="_blank"><img class="giphy" src="../assets/poweredbyGiphy.gif"/></a>
-        <a :href="gif.image_url" download><pre><code>Download this GIF!</code></pre></a>
+          <!-- Image -->
+          <a @click="reFetch()">
+            <img :src="gif.image_url"/>
+          </a>
+          <!-- Powered by Giphy -->
+          <a :href="gif.url" target="_blank"><img class="giphy" src="../assets/poweredbyGiphy.gif"/></a>
+          <!-- Download -->
+          <a :href="gif.image_url" download><pre><code>Download this GIF!</code></pre></a>
       </main>
 
       <socialShareing/>
+
   </section>
 </template>
 
@@ -19,11 +27,13 @@
 <script>
 import axios from 'axios'
 import animals from '@/animals.js'
+
 import socialShareing from '@/components/socialShareing'
+import Spinner from 'vue-simple-spinner'
 
 export default {
 
-  components: { socialShareing },
+  components: { socialShareing, Spinner },
 
   data: () => ({
     loading: true,
@@ -58,11 +68,7 @@ export default {
 
       .then(response => {
         this.gif = response.data.data
-        // Cutre way ... image is ready ...
-        var self = this
-        setTimeout(function () {
-          self.loading = false
-        }, 1000)
+        this.loading = false
       })
 
       .catch(error => {
@@ -81,9 +87,6 @@ export default {
 
 
 <style lang="sass">
-a
-  color: #42b883
-  transition: all 0.4s ease
 
 pre
   max-width: 600px
@@ -104,7 +107,7 @@ section
   z-index: 666
 
 h1
-  font-weight: 100!important
+  font-weight: 100
   font-size: 3.4vmax
   letter-spacing: .01em
   animation: pulse
@@ -129,6 +132,30 @@ main
     min-width: 600px
     @media (max-width: 40.0rem)
       min-width: 100%
+
+.loading
+  height: 300px
+  padding-top: 125px
+
+/* -----------------------------------~~/\
+   ~ GIPHY CREDITS                       |
+  --------------------------------------*/
+.giphy
+  position: absolute
+  bottom: 4.5rem
+  left: 0
+  max-height: 53px
+  min-width: 30px
+  z-index: 999
+  cursor: help
+  animation: poweredByGiphy 2.666s ease-in
+@keyframes poweredByGiphy
+  from
+    opacity: 0
+  80%
+    opacity: 0
+  to
+    opacity: 1
 
 
 /* -----------------------------------~~/\
@@ -170,35 +197,16 @@ main
 
 
 <style lang="sass">
-/* -----------------------------------~~/\
-   ~ GIPHY CREDITS                       |
-  --------------------------------------*/
-.giphy
-  position: absolute
-  bottom: 4.5rem
-  left: 0
-  max-height: 53px
-  min-width: 30px
-  z-index: 999
-  cursor: help
-  animation: poweredByGiphy 2.666s ease-in
-@keyframes poweredByGiphy
-  from
-    opacity: 0
-  80%
-    opacity: 0
-  to
-    opacity: 1
-
-
-// aylmao?
+//
+// This section is even more crazy
 @media (max-width: 30.0rem)
   footer
     display: block
-    zoom: .7
+    button
+      width: 280px
+      margin-bottom: 10px!important
   h1
     font-size: 21px
-    margin-top: 20vh
-  pre code
-    padding: 2px
+    padding-top: 80px
+
 </style>

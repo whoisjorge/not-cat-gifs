@@ -20,9 +20,14 @@ export default {
 }
 </script>
 
-<style>
-canvas {
-  position: fixed;
-  top: 0;
-}
+
+<style lang="sass">
+canvas
+  position: fixed
+  top: 0
+
+// Fix header links on "low" mobile devices
+@media (max-width: 30.0rem)
+  canvas
+    display: none
 </style>

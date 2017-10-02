@@ -10,10 +10,10 @@
                   inline-template>
                   <footer>
                       <network network="facebook">
-                        <button class="fb button button-outline">Share on facebook</button>
+                        <button class="fb button">Share on facebook</button>
                       </network>
                       <network network="twitter">
-                        <button class="tw button button-outline">Share on twitters</button>
+                        <button class="tw button">Share on twitters</button>
                       </network>
                   </footer>
   </social-sharing>
@@ -40,9 +40,12 @@ export default {
 $fb: #3b5998
 $tw: #1dcaff
 
-button
+.button
   margin: 0 10px
-  transition: background-color .2s, color .2s
+  background-color: transparent
+  transition: background-color .3s, color .4s
+  &:focus
+    background-color: transparent
   &:before
     content: ""
     display: inline-block
@@ -53,11 +56,11 @@ button
 
   // Share on facebook
   &.fb
-    color: $fb!important
+    color: $fb
     border-color: $fb
     &:hover
-      color: #fff!important
-      background-color: $fb!important
+      color: #fff
+      background-color: $fb
       &:before
         background-color: #fff
     &:before
@@ -66,12 +69,12 @@ button
 
   // Share on twitter
   &.tw
-    color: $tw!important
+    color: $tw
     border-color: $tw
     &:hover
-      color: #fff!important
-      background-color: $tw!important
-      border-color: $tw!important
+      color: #fff
+      background-color: $tw
+      border-color: $tw
       &:before
         background-color: #fff
     &:before

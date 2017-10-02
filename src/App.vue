@@ -9,11 +9,12 @@
 
     <!-- Thank you JS.org -->
     <a style="position: absolute;top: 12px;left: 7px;" href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">
-      <img src="https://logo.js.org/dark_horz.png" width="50" alt="JS.ORG Logo"/>
+      <img src="https://logo.js.org/dark_horz.png" width="50" alt="JS.ORG"/>
     </a>
 
   </div>
 </template>
+
 
 
 <script>
@@ -28,8 +29,6 @@ export default {
 
 
 
-
-
 <style lang="scss">
 /* https://github.com/milligram/milligram */
 @import "~milligram/dist/milligram.css";
@@ -40,6 +39,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+  user-select: none;
   display: flex;
   align-items: center;
   min-height: 100vh;

@@ -20,6 +20,7 @@
     "vue": "^2.4.4",
     "vue-particles": "^1.0.9",
     "vue-router": "^2.7.0",
+    "vue-simple-spinner": "^1.2.8",
     "vue-social-sharing": "^2.2.5"
   },
   "devDependencies": {

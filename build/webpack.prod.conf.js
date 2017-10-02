@@ -6,8 +6,8 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
-var PrerenderSpaPlugin = require('prerender-spa-plugin')
+// var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
+// var PrerenderSpaPlugin = require('prerender-spa-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
@@ -67,15 +67,17 @@ var webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency',
       // embed all JavaScript and CSS > inline
-      inlineSource: '.(js|css)$'
+      // inlineSource: '.(js|css)$'
     }),
     // https://github.com/DustinJackson/html-webpack-inline-source-plugin
-    new HtmlWebpackInlineSourcePlugin(),
+    // new HtmlWebpackInlineSourcePlugin(),
+    //
     // https://github.com/chrisvfritz/prerender-spa-plugin
-    new PrerenderSpaPlugin(
-      path.join(__dirname, '../dist'),
-      [ '/' ]
-    ),
+    // new PrerenderSpaPlugin(
+    //   path.join(__dirname, '../dist'),
+    //   [ '/' ]
+    // ),
+    //
     // keep module.id stable when vender modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // split vendor js into its own file
