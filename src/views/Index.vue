@@ -91,7 +91,7 @@ pre
   animation-duration: 1.2s
   animation-fill-mode: both
   animation-name: fadeInUp
-  border-color: transparent
+  border-left: none
   code
     background-image: linear-gradient(152deg,#42b883,#feab3a)
     -webkit-background-clip: text
@@ -104,7 +104,7 @@ section
   z-index: 666
 
 h1
-  font-weight: 100
+  font-weight: 100!important
   font-size: 3.4vmax
   letter-spacing: .01em
   animation: pulse
@@ -198,7 +198,7 @@ main
     zoom: .7
   h1
     font-size: 21px
-    margin-top: 10vh
+    margin-top: 20vh
   pre code
     padding: 2px
 </style>
