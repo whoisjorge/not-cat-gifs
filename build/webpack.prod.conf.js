@@ -6,7 +6,7 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-// var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
+var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
 var PrerenderSpaPlugin = require('prerender-spa-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
@@ -55,7 +55,7 @@ var webpackConfig = merge(baseWebpackConfig, {
       filename: config.build.index,
       template: 'index.html',
       favicon: 'favicon.ico',
-      inject: 'head',
+      inject: true,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -65,11 +65,13 @@ var webpackConfig = merge(baseWebpackConfig, {
       },
       // Ensure chunks are evaluated in correct order
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-      chunksSortMode: 'dependency'
-      // inlineSource: '.(js|css)$' // embed all javascript and css inline
+      chunksSortMode: 'dependency',
+      // embed all JavaScript and CSS > inline
+      inlineSource: '.(css)$'
     }),
     // https://github.com/DustinJackson/html-webpack-inline-source-plugin
-    // new HtmlWebpackInlineSourcePlugin(),
+    new HtmlWebpackInlineSourcePlugin(),
+    // https://github.com/chrisvfritz/prerender-spa-plugin
     new PrerenderSpaPlugin(
       path.join(__dirname, '../dist'),
       [ '/' ]
