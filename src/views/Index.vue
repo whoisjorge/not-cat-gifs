@@ -198,7 +198,7 @@ main
     zoom: .7
   h1
     font-size: 21px
-    margin-top: 66.6px
+    margin-top: 10vh
   pre code
     padding: 2px
 </style>

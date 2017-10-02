@@ -67,7 +67,7 @@ var webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency',
       // embed all JavaScript and CSS > inline
-      inlineSource: '.(css)$'
+      inlineSource: '.(js|css)$'
     }),
     // https://github.com/DustinJackson/html-webpack-inline-source-plugin
     new HtmlWebpackInlineSourcePlugin(),
