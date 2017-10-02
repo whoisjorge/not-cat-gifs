@@ -58,7 +58,11 @@ export default {
 
       .then(response => {
         this.gif = response.data.data
-        this.loading = false
+        // Cutre way ... image is ready ...
+        var self = this
+        setTimeout(function () {
+          self.loading = false
+        }, 1000)
       })
 
       .catch(error => {
@@ -77,7 +81,6 @@ export default {
 
 
 <style lang="sass">
-
 a
   color: #42b883
   transition: all 0.4s ease
@@ -101,9 +104,9 @@ section
   z-index: 666
 
 h1
-  letter-spacing: .01em
+  font-weight: 100
   font-size: 3.4vmax
-  font-weight: lighter
+  letter-spacing: .01em
   animation: pulse
   animation-duration: 2s
   a
@@ -127,24 +130,6 @@ main
     @media (max-width: 40.0rem)
       min-width: 100%
 
-
-.giphy
-  position: absolute
-  bottom: 4.5rem
-  left: 0
-  max-height: 53px
-  min-width: 30px
-  z-index: 999
-  cursor: help
-  animation: poweredByGiphy 2.666s ease-in
-
-@keyframes poweredByGiphy
-  from
-    opacity: 0
-  80%
-    opacity: 0
-  to
-    opacity: 1
 
 /* -----------------------------------~~/\
    ~ ANIMATIONS                          |
@@ -185,6 +170,27 @@ main
 
 
 <style lang="sass">
+/* -----------------------------------~~/\
+   ~ GIPHY CREDITS                       |
+  --------------------------------------*/
+.giphy
+  position: absolute
+  bottom: 4.5rem
+  left: 0
+  max-height: 53px
+  min-width: 30px
+  z-index: 999
+  cursor: help
+  animation: poweredByGiphy 2.666s ease-in
+@keyframes poweredByGiphy
+  from
+    opacity: 0
+  80%
+    opacity: 0
+  to
+    opacity: 1
+
+
 // aylmao?
 @media (max-width: 30.0rem)
   footer

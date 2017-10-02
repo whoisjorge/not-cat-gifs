@@ -1,11 +1,11 @@
 <!-- https://github.com/nicolasbeauvais/vue-social-sharing -->
 <template>
   <social-sharing url="https://cats.js.org"
-                  title="There are no Cat GIFs..."
-                  description="There are no Cat GIFs..."
+                  title="I found multiple cat GIFs on"
+                  description="I found multiple cat GIFs on"
                   quote=""
 
-                  hashtags=""
+                  hashtags="cat,cats,gifs,catlove"
                   twitter-user=""
                   inline-template>
                   <footer>
