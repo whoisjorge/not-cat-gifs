@@ -1,16 +1,12 @@
-<p align="center">
-  <img src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f63f.svg" width="256" height"256" alt="not-cat-gifs">
+<div align="center">
+  <a href="https://cats.js.org"><img src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f63f.svg" width="256" height"256" alt="not-cat-gifs"></a>
   <br>
-</p>
-
-
-<h5 align="center">🐈 🐈 🐈 Cats are progressively leaving the Internet...</h5>
-<p align="center">
+  <h5>🐈 🐈 🐈 Cats are progressively leaving the Internet...</h5>
   <img src="http://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg" alt="believe"/>
-</p>
-
+</div>
 
 <br>
+
 
 
 ## Developed ⚡️ with
@@ -21,7 +17,7 @@
 
 And thanks to the [JS.org](https://JS.org) community.
 
-<br>
+
 
 ## Contributing
 
@@ -49,7 +45,7 @@ npm start
 
 > For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-<br>
+
 
 ## License
 
