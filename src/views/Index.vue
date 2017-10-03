@@ -17,7 +17,7 @@
           <a :href="gif.image_url" download><pre><code>Download this GIF!</code></pre></a>
       </main>
 
-      <social-sharing/>
+      <Share/>
 
   </section>
 </template>
@@ -28,12 +28,12 @@
 import axios from 'axios'
 import animals from '@/animals.js'
 
-import socialSharing from '@/components/socialSharing'
+import Share from '@/components/Share'
 import Spinner from 'vue-simple-spinner'
 
 export default {
 
-  components: { socialSharing, Spinner },
+  components: { Share, Spinner },
 
   data: () => ({
     loading: true,
@@ -62,7 +62,7 @@ export default {
           // api_key: 'Your API key',
           rating: 'g',
           // Random animal query
-          tag: 'animal-' + this.animal
+          tag: 'animal-cute-' + this.animal
         }
       })
 
@@ -196,7 +196,7 @@ main
 
 
 
-<style lang="sass">
+<style lang="sass" scoped>
 //
 // This section is even more crazy
 @media (max-width: 30.0rem)
