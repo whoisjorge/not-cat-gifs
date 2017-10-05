@@ -11,7 +11,7 @@
 
 ## Powered ⚡️ by
 
-<img src="https://media.giphy.com/media/xTiTntReleqBnhBNwQ/giphy.gif" width="284" align="right"/>
+<a href="https://media.giphy.com/media/nR4L10XlJcSeQ/giphy.gif"><img src="https://media.giphy.com/media/xTiTntReleqBnhBNwQ/giphy.gif" width="284" align="right"/></a>
 
 - [Vue](https://vuejs.org)
 - [Webpack](https://webpack.github.io)
