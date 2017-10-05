@@ -6,27 +6,27 @@
 </div>
 
 
-<br>
+<br><br>
 
 
 ## Powered ⚡️ by
 
+<br>
 <a href="https://media.giphy.com/media/nR4L10XlJcSeQ/giphy.gif"><img src="https://media.giphy.com/media/xTiTntReleqBnhBNwQ/giphy.gif" width="279" align="right"/></a>
 
 - [Vue](https://vuejs.org)
 - [Webpack](https://webpack.github.io)
 - [Axios](https://github.com/mzabriskie/axios)
 - [Giphy](https://developers.giphy.com)
+- [JS.org](https://JS.org)
+- _And many more!_ [(see)](package.json)
 
 <br>
-
-> :octocat: Special thanks to the [JS.org](https://JS.org) community.
-
 
 ## 💻 Development
 
 ### Requirements
- Make sure all dependencies have been installed before moving on:
+ Make sure all _dependencies_ have been installed before moving on:
 
  - [Node](https://nodejs.org) >= 4.0.x
  - [npm](https://www.npmjs.com) >= 3.0.x
