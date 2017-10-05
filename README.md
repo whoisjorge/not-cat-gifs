@@ -11,15 +11,16 @@
 
 ## Powered ⚡️ by
 
-<a href="https://media.giphy.com/media/nR4L10XlJcSeQ/giphy.gif"><img src="https://media.giphy.com/media/xTiTntReleqBnhBNwQ/giphy.gif" width="284" align="right"/></a>
+<a href="https://media.giphy.com/media/nR4L10XlJcSeQ/giphy.gif"><img src="https://media.giphy.com/media/xTiTntReleqBnhBNwQ/giphy.gif" width="279" align="right"/></a>
 
 - [Vue](https://vuejs.org)
 - [Webpack](https://webpack.github.io)
 - [Axios](https://github.com/mzabriskie/axios)
 - [Giphy](https://developers.giphy.com)
-- And sometimes _Cat GIFs_
 
-:octocat: Special thanks to the [JS.org](https://JS.org) community.
+<br>
+
+> :octocat: Special thanks to the [JS.org](https://JS.org) community.
 
 
 ## 💻 Development
@@ -51,10 +52,13 @@ npm start
 
 ## Contributing
 
-If you find a bug or want to contribute to the code or documentation, you can help by submitting an [issue](https://github.com/whoisjorge/not-cat-gifs/issues) or a [pull request](https://github.com/whoisjorge/not-cat-gifs/pulls).
+🎉 __First off, thanks for considering contributing to this repository!__
 
+If you find a bug or want to contribute to the code, you can help by submitting an [issue](https://github.com/whoisjorge/not-cat-gifs/issues) or a [pull request](https://github.com/whoisjorge/not-cat-gifs/pulls). If you are making a substantial change to the code, please discuss it first to ensure you are spending your time wisely. Use your best judgment, and feel free to propose any changes in a pull request.
 
-If you want to add, rename or remove an animal  from the search query — sounds huge, huh? — they're all located in the [animals.js](src/animals.js) file. [_Just edit it!_](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js)
+<p align="center">🚡</p>
+
+If you want to add, rename or remove an animal from the search query — _sounds huge, huh?_ — they're all located in the [animals.js](src/animals.js) file, [_just edit it!_](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js)
 
 
 
