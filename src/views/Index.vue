@@ -2,7 +2,7 @@
   <section>
       <h1>There are no cats but... <a @click="reFetch()">{{this.animal}}s!?</a></h1>
 
-      <div class="loading" v-if="loading">
+      <div style="height: 300px; padding-top: 125px" v-if="loading">
         <spinner size="tiny" :message="'Loading ' + this.animal + ' GIF...'"/>
       </div>
 
@@ -26,14 +26,14 @@
 
 <script>
 import axios from 'axios'
-import animals from '@/animals.js'
+import animals from './animals.js'
 
-import Share from '@/components/Share'
 import Spinner from 'vue-simple-spinner'
+import Share from '@/components/Share'
 
 export default {
 
-  components: { Share, Spinner },
+  components: { Spinner, Share },
 
   data: () => ({
     loading: true,
@@ -87,21 +87,9 @@ export default {
 
 
 <style lang="sass" scoped>
-
-pre
-  max-width: 600px
-  margin: 0 auto 20px auto
-  animation-duration: 1.2s
-  animation-fill-mode: both
-  animation-name: fadeInUp
-  border-left: none
-  code
-    background-image: linear-gradient(152deg,#42b883,#feab3a)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
-    -webkit-animation: hue 6s infinite linear
-    animation-fill-mode: both
-
+/* -----------------------------------~~/\
+   ~ GENERAL                             |
+  --------------------------------------*/
 section
   margin: 0 auto
   z-index: 666
@@ -112,6 +100,9 @@ h1
   letter-spacing: .01em
   animation: pulse
   animation-duration: 2s
+  @media (max-width: 30.0rem)
+    font-size: 21px
+    padding-top: 80px
   a
     font-weight: bold
     color: inherit
@@ -133,29 +124,19 @@ main
     @media (max-width: 40.0rem)
       min-width: 100%
 
-.loading
-  height: 300px
-  padding-top: 125px
-
-/* -----------------------------------~~/\
-   ~ GIPHY CREDITS                       |
-  --------------------------------------*/
-.giphy
-  position: absolute
-  bottom: 4.5rem
-  left: 0
-  max-height: 53px
-  min-width: 30px
-  z-index: 999
-  cursor: help
-  animation: poweredByGiphy 2.666s ease-in
-@keyframes poweredByGiphy
-  from
-    opacity: 0
-  80%
-    opacity: 0
-  to
-    opacity: 1
+pre
+  max-width: 600px
+  margin: 0 auto 20px auto
+  animation-duration: 1.2s
+  animation-fill-mode: both
+  animation-name: fadeInUp
+  border-left: none
+  code
+    background-image: linear-gradient(152deg,#42b883,#feab3a)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    -webkit-animation: hue 6s infinite linear
+    animation-fill-mode: both
 
 
 /* -----------------------------------~~/\
@@ -182,26 +163,25 @@ main
     transform: scale3d(1.05, 1.05, 1.05)
   to
     transform: scale3d(1, 1, 1)
-</style>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<style lang="sass" scoped>
-//
-// This section is even more crazy
-@media (max-width: 30.0rem)
-  h1
-    font-size: 21px
-    padding-top: 80px
-
+/* -----------------------------------~~/\
+   ~ GIPHY CREDITS                       |
+  --------------------------------------*/
+.giphy
+  position: absolute
+  bottom: 4.5rem
+  left: 0
+  max-height: 53px
+  min-width: 30px
+  z-index: 999
+  cursor: help
+  animation: poweredByGiphy 2.666s ease-in
+@keyframes poweredByGiphy
+  from
+    opacity: 0
+  80%
+    opacity: 0
+  to
+    opacity: 1
 </style>

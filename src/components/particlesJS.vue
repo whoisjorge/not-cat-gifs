@@ -10,6 +10,7 @@
 </template>
 
 
+
 <script>
 import Vue from 'vue'
 import VueParticles from 'vue-particles'
@@ -19,6 +20,7 @@ export default {
   name: 'particlesJS'
 }
 </script>
+
 
 
 <style lang="sass">

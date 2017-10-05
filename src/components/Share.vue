@@ -37,7 +37,6 @@ export default {
 
 
 <style lang="sass">
-
 /* Suicide this document please */
 
 

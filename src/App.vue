@@ -6,12 +6,12 @@
     <router-view></router-view>
 
     <!-- Thank you JS.org -->
-    <a style="position: absolute;top: 12px;left: 7px;" href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">
+    <!-- <a style="position: absolute;top: 12px;left: 7px;" href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">
       <img src="https://logo.js.org/dark_horz.png" width="50" alt="JS.ORG"/>
-    </a>
-
+    </a> -->
   </div>
 </template>
+
 
 
 <script>
@@ -23,6 +23,7 @@ export default {
   components: { githubCorner, particlesJS }
 }
 </script>
+
 
 
 <style lang="scss">
