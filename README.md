@@ -48,7 +48,7 @@ npm start
 
 > For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-
+<br>
 
 ## Contributing
 
@@ -60,7 +60,7 @@ If you find a bug or want to contribute to the code, you can help by submitting 
 
 If you want to add, rename or remove an animal from the search query — _sounds huge, huh?_ — they're all located in the [animals.js](src/animals.js) file, [_just edit it!_](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js)
 
-
+<br>
 
 ## License
 
@@ -74,6 +74,6 @@ This is free software; you can redistribute it and/or modify it under the terms 
 
 <!-- Thanks for watching! -->
 <br><br><br><br>
-<p align="center">🎊<br>
-  <sub><sup>Random codes by <a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
+<p align="center">😸<br>
+  <sub><sup>Built with &lt;/&gt; by <a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
 </p>

@@ -26,7 +26,7 @@
 
 <script>
 import axios from 'axios'
-import animals from './animals.js'
+import animals from '../animals.js'
 
 import Spinner from 'vue-simple-spinner'
 import Share from '@/components/Share'

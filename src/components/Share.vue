@@ -87,7 +87,7 @@ $tw: #1dcaff
 
 
 // ... boom!
-@media (max-width: 30.0rem)
+@media (max-width: 40.0rem)
   footer
     display: block
     button
