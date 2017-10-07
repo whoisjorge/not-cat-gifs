@@ -26,10 +26,10 @@ module.exports = merge(baseWebpackConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
+      inject: true,
       filename: 'index.html',
       template: 'index.html',
-      favicon: 'favicon.ico',
-      inject: true
+      favicon: './static/favicon.ico'
     }),
     new FriendlyErrorsPlugin()
   ]

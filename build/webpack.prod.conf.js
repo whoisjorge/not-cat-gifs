@@ -31,9 +31,16 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
+    // Minify the code
     new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      output: { comments: false },
+      compress: {
+        warnings: false,
+        comparisons: false
+      },
+      output: {
+        comments: false,
+        ascii_only: true
+      },
       sourceMap: true
     }),
     // extract css into its own file
@@ -53,13 +60,24 @@ var webpackConfig = merge(baseWebpackConfig, {
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: config.build.index,
-      template: 'index.html',
-      favicon: 'favicon.ico',
       inject: true,
+      template: 'index.html',
+      favicon: './static/favicon.ico',
       minify: {
-        removeComments: true,
+        collapseBooleanAttributes: true,
         collapseWhitespace: true,
-        removeAttributeQuotes: true
+        removeAttributeQuotes: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
         // more options:
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
@@ -105,7 +123,7 @@ var webpackConfig = merge(baseWebpackConfig, {
       {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
-        ignore: ['.*']
+        ignore: ['.*', 'favicon.ico']
       }
     ])
   ]

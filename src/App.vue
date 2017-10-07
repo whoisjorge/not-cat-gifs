@@ -27,7 +27,9 @@ export default {
 
 
 <style lang="scss">
-/* https://github.com/milligram/milligram */
+/*! https://github.com/necolas/normalize.css */
+// @import "~normalize.css";
+/*! https://github.com/milligram/milligram */
 @import "~milligram/dist/milligram.css";
 
 
