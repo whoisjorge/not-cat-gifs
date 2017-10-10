@@ -1,21 +1,20 @@
 <!-- https://github.com/nicolasbeauvais/vue-social-sharing -->
 <template>
   <social-sharing url="https://cats.js.org"
-                  title="I found multiple cat GIFs on"
-                  description="I found multiple cat GIFs on"
-                  quote=""
-
+                  title="I also found multiple cat GIFs on"
+                  description="I also found multiple cat GIFs on"
+                  quote="I also found multiple cat GIFs"
                   hashtags="cat,cats,gifs,catlove"
                   twitter-user=""
                   inline-template>
-                  <footer>
-                    <network network="facebook">
-                      <button class="fb button">Share on facebook</button>
-                    </network>
-                    <network network="twitter">
-                      <button class="tw button">Share on twitters</button>
-                    </network>
-                  </footer>
+    <footer>
+        <network network="facebook">
+          <button class="fb button">Share on facebook</button>
+        </network>
+        <network network="twitter">
+          <button class="tw button">Share on twitter</button>
+        </network>
+    </footer>
   </social-sharing>
 </template>
 

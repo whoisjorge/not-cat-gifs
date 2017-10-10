@@ -62,7 +62,7 @@ export default {
           // api_key: 'Your API key',
           rating: 'g',
           // Random animal query
-          tag: 'animal-cute-' + this.animal
+          tag: 'animal-' + this.animal
         }
       })
 
