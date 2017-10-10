@@ -66,7 +66,9 @@ If you find a bug or want to contribute to the code, you can help by submitting 
 
 <p align="center">🚡</p>
 
-If you want to add, rename or remove an animal from the search query they're all located in the [animals.js](src/animals.js) file, [_just edit it!_](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js)
+If you want to add, rename or remove an animal from the search query they're all located in the [animals.js](src/animals.js) file:
+
+:octocat: [_Just edit it!_](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js)
 
 <br>
 
