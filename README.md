@@ -82,8 +82,9 @@ This is free software; you can redistribute it and/or modify it under the terms 
 
 
 
+
 <!-- Thanks for watching! -->
 <br><br><br><br>
-<p align="center">😸<br>
-  <sub><sup>Built with &lt;/&gt; by <a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
+<p align="center"> <sub><sup>&lt;/&gt;</sub></sup><br>
+  <sub><sup><a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
 </p>
