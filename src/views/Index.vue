@@ -17,7 +17,7 @@
           <a :href="gif.image_url" download><pre><code>Download this GIF!</code></pre></a>
       </main>
 
-      <Share/>
+      <ShareButtons/>
 
   </section>
 </template>
@@ -29,11 +29,11 @@ import axios from 'axios'
 import animals from '../animals.js'
 
 import Spinner from 'vue-simple-spinner'
-import Share from '@/components/Share'
+import ShareButtons from '@/components/ShareButtons'
 
 export default {
 
-  components: { Spinner, Share },
+  components: { Spinner, ShareButtons },
 
   data: () => ({
     loading: true,

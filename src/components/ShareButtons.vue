@@ -1,9 +1,9 @@
 <!-- https://github.com/nicolasbeauvais/vue-social-sharing -->
 <template>
   <social-sharing url="https://cats.js.org"
-                  title="I also found multiple cat GIFs on"
-                  description="I also found multiple cat GIFs on"
-                  quote="I also found multiple cat GIFs"
+                  title="🙀 I found multiple Cat GIFs on "
+                  description=""
+                  quote="The First Web Application Without Cat GIFs 🙀"
                   hashtags="cat,cats,gifs,catlove"
                   twitter-user=""
                   inline-template>
@@ -26,7 +26,7 @@ import SocialSharing from 'vue-social-sharing'
 Vue.use(SocialSharing)
 
 export default {
-  name: 'Share',
+  name: 'ShareButtons',
   data: () => ({
     //
   })
@@ -36,9 +36,6 @@ export default {
 
 
 <style lang="sass">
-/* Suicide this document please */
-
-
 // Brand colors
 $fb: #3b5998
 $tw: #1dcaff
