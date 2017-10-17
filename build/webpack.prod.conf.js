@@ -70,8 +70,6 @@ var webpackConfig = merge(baseWebpackConfig, {
         removeComments: true,
         removeEmptyAttributes: true,
         removeRedundantAttributes: true,
-        collapseWhitespace: true,
-        removeRedundantAttributes: true,
         useShortDoctype: true,
         removeStyleLinkTypeAttributes: true,
         keepClosingSlash: true,
