@@ -21,7 +21,7 @@
 - [Axios](https://github.com/mzabriskie/axios)
 - [Giphy](https://developers.giphy.com)
 - [JS.org](https://JS.org)
-- _And many more! [[+]](package.json)_
+- _[[+]](package.json)_
 
 <br>
 
@@ -32,7 +32,7 @@
 
  - [Node](https://nodejs.org) >= 4.0.x
  - [npm](https://www.npmjs.com) >= 3.0.x
- - [Yarn](https://yarnpkg.com/en/docs/install)
+    - or [Yarn](https://yarnpkg.com/en/docs/install)
 
 ### Installation
 
@@ -56,7 +56,7 @@ npm start
 
 🎉 __First off, thanks for considering contributing to this repository!__
 
-If you find a bug or want to contribute to the code, you can help by submitting an [issue](https://github.com/whoisjorge/not-cat-gifs/issues) or a [pull request](https://github.com/whoisjorge/not-cat-gifs/pulls). If you are making a substantial change to the code, please discuss it first to ensure you are spending your time wisely. Use your best judgment, and feel free to propose any changes in a pull request:
+If you find a bug or want to contribute to the code, you can help by submitting an [issue](https://github.com/whoisjorge/not-cat-gifs/issues) or a [pull request](https://github.com/whoisjorge/not-cat-gifs/pulls). If you are making a substantial change to the code, please discuss it first but feel free to propose any changes in a pull request:
 
 - Fork it!
 - Create your feature branch: `git checkout -b my-new-feature`
@@ -66,9 +66,7 @@ If you find a bug or want to contribute to the code, you can help by submitting 
 
 <p align="center">🚡</p>
 
-If you want to add, rename or remove an animal from the search query they're all located in the [animals.js](src/animals.js) file:
-
-:octocat: [_Just edit it!_](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js)
+If you want to add, rename or remove an animal from the api query they're all located in the [animals.js](src/animals.js) file ([_edit me!_](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js))
 
 <br>
 
