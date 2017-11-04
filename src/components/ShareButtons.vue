@@ -1,10 +1,10 @@
 <!-- https://github.com/nicolasbeauvais/vue-social-sharing -->
 <template>
   <social-sharing url="https://cats.js.org"
-                  title="🙀 I found multiple Cat GIFs on "
-                  description=""
-                  quote="The First Web Application Without Cat GIFs 🙀"
-                  hashtags="cat,cats,gifs,catlove"
+                  title="🙀 Catwesome"
+                  description="Now the Internet has the first place on it's World Wide Web without cat Gifs"
+                  quote="Now the Internet has the first place on it's World Wide Web without cat Gifs 🙀"
+                  hashtags="cats,gifs,catlove,notcatgifs"
                   twitter-user=""
                   inline-template>
     <footer>
