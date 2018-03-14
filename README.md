@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://cats.js.org"><img src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f63f.svg" width="256" height"256" alt="not-cat-gifs"></a>
   <br>
-  <h4>The First Web Application Without Cat GIFs</h4>
+  <h4>The Definitive Collection Of Not Cat Gifs</h4>
   <a href="https://forthebadge.com/"><img src="http://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg" alt="believe"/></a>
   <br><br>
   ✨ <b><a href="https://cats.js.org"><small><i> Check it out! </i></small></a> </b> ✨
@@ -32,7 +32,6 @@
 
  - [Node](https://nodejs.org) >= 4.0.x
  - [npm](https://www.npmjs.com) >= 3.0.x
-    - or [Yarn](https://yarnpkg.com/en/docs/install)
 
 ### Installation
 
@@ -66,10 +65,6 @@ If you find a bug or want to contribute to the code, you can help by submitting 
 
 <p align="center">🚡</p>
 
-If you want to add, rename or remove an animal from the api query they're all located in the [animals.js](src/animals.js) file ([_edit me!_](https://github.com/whoisjorge/not-cat-gifs/edit/master/src/animals.js))
-
-<br>
-
 ## License
 
 This is free software; you can redistribute it and/or modify it under the terms of the MIT license. See [LICENSE](LICENSE) for details.
@@ -77,12 +72,8 @@ This is free software; you can redistribute it and/or modify it under the terms 
 
 
 
-
-
-
-
 <!-- Thanks for watching! -->
-<br><br><br><br>
+<br><br><br>
 <p align="center"> <sub><sup>&lt;/&gt;</sub></sup><br>
   <sub><sup><a href="http://www.whoisjorge.me">@whoisjorge</a></sup></sub>
 </p>
