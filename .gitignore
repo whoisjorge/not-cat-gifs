@@ -1,28 +1,25 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# https://help.github.com/articles/ignoring-files
 
-
-# Project specific #
-####################
-dist/
-node_modules/
 *.log
+.yarn-integrity
+yarn.lock
+package-lock.json
 
+# Production build
+dist
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# System Files
+*.DS_Store
+.AppleDouble
+.LSOverride
 Thumbs.db
-
-# Editor directories and files #
-################################
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln

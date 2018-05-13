@@ -1,15 +1,15 @@
 {
+  "private": true,
   "name": "not-cat-gifs",
   "version": "0.0.1",
   "description": "An ode to every other animals in the world and their right to entertain competitively through the Internet",
-  "author": "Jorge Moliner <email@whoisjorge.me>",
-  "license": "MIT",
-  "homepage": "https://cats.js.org",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/whoisjorge/not-cat-gifs.git"
   },
-  "private": true,
+  "author": "Jorge Moliner <email@whoisjorge.me>",
+  "license": "MIT",
+  "homepage": "https://cats.js.org",
   "scripts": {
     "start": "npm run dev",
     "dev": "node build/dev-server.js",
